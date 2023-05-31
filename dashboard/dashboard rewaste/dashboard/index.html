@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div class="header">
+      <img src="REWASTE HDd LOGO.png" alt="Logo" class="logo" />
+      <h1>Dashboard</h1>
+    </div>
+    <title>Rewaste</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form id="myForm" enctype="multipart/form-data">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="image">Gambar:</label>
+      <input type="file" id="image" name="image" accept="image/*" required />
+
+      <label for="description">Deskripsi:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <button type="submit">Tambah Data</button>
+    </form>
+
+    <table id="myTable">
+      <tr>
+        <th>Nama</th>
+        <th>Gambar</th>
+        <th>Deskripsi</th>
+        <th>Aksi</th>
+      </tr>
+    </table>
+
+    <div id="detailModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Detail Data</h2>
+        <p id="detailName"></p>
+        <img id="detailImage" src="" alt="" />
+        <p id="detailDescription"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
